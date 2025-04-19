@@ -29,7 +29,7 @@ function configurarAplicacion() {
         if (i < posibilidades.length) {
             // Configurar la imagen correspondiente (sin modificar el array original)
             const opcion = posibilidades[i];
-            imagenesJugador[i].src = `img/${opcion}Jugador.png`;
+            imagenesJugador[i].src = `${opcion}Jugador.png`;
             
             // Asignar evento de clic
             imagenesJugador[i].addEventListener('click', function() {
@@ -110,7 +110,7 @@ function realizarTirada() {
     const opcionMaquina = Math.floor(Math.random() * posibilidades.length);
     const opcionMaquinaNombre = posibilidades[opcionMaquina];
     const imagenMaquina = document.querySelector('#maquina img');
-    imagenMaquina.src = `img/${opcionMaquinaNombre}Ordenador.png`;
+    imagenMaquina.src = `${opcionMaquinaNombre}Ordenador.png`;
     
     // Incrementar contador de partidas jugadas
     partidasJugadas++;
